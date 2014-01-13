@@ -286,6 +286,10 @@ int main(int argc, char **argv) {
     loop = uv_default_loop();
     if (server_start())
         return 1;
+#ifdef UV_RUN_DEFAULT
     uv_run(loop, UV_RUN_DEFAULT);
+#else
+    uv_run(loop);
+#endif
     return 0;
 }

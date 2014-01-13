@@ -1,4 +1,4 @@
-WebSocket to TCP Proxy
+Websocket to TCP Proxy
 ====
 
 This is a simple Websocket to TCP proxy, built on libuv.

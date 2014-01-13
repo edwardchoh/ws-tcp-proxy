@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <netinet/in.h>
 #include "wsparser.h"
 
 void print_ws_header(ws_header* header) {
