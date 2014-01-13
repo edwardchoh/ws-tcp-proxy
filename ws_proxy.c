@@ -7,7 +7,7 @@
 //
 
 #include <stdio.h>
-#include <openssl/ssl.h>
+#include <getopt.h>
 #include "ws_proxy.h"
 #include "sha1.h"
 
@@ -275,14 +275,64 @@ int server_start() {
         fprintf(stderr, "Socket listen error: %s\n", uv_err_name(uv_last_error(loop)));
         return 1;
     }
+    DEBUG_PRINT("Proxying Websocket (%s:%u)", inet_ntoa(local_addr.sin_addr), ntohs(local_addr.sin_port));
+    DEBUG_PRINT(" -> TCP (%s:%u)\n", inet_ntoa(remote_addr.sin_addr), ntohs(remote_addr.sin_port));
+    return 0;
+}
+
+int parse_args(int argc, char **argv) {
+    /* initialize settings */
+    local_addr = uv_ip4_addr("0.0.0.0", 8080);
+    remote_addr = uv_ip4_addr("127.0.0.1", 5000);
+    
+    /* parse command line arguments */
+    int c;
+    while(1) {
+        static struct option long_options[] = {
+            {"remote", required_argument, 0, 'r'},
+            {"local", required_argument, 0, 'l'},
+            {0, 0, 0, 0},
+        };
+        
+        int option_index = 0;
+        
+        c = getopt_long(argc, argv, "r:l:", long_options, &option_index);
+        
+        /* detect end of options */
+        if (c == -1)
+            break;
+        
+        switch(c) {
+            case 'r':
+            case 'l': {
+                char *colon = strchr(optarg, ':');
+                if (colon == NULL)
+                    goto usage;
+                char *port = colon + 1;
+                *colon = '\0';
+                struct sockaddr_in addr = uv_ip4_addr(optarg, atoi(port));
+                if (c == 'r')
+                    remote_addr = addr;
+                else
+                    local_addr = addr;
+                break;
+            }
+            default:
+                goto usage;
+        }
+    }
+    return 1;
+    
+usage:
+    fprintf(stderr, "usage: ws_proxy --local 0.0.0.0:8080 --remote 127.0.0.1:5000\n");
     return 0;
 }
 
 int main(int argc, char **argv) {
-    /* initialize settings */
-    local_addr = uv_ip4_addr("0.0.0.0", 8080);
-    remote_addr = uv_ip4_addr("192.168.0.144", 1883);
 
+    if (parse_args(argc, argv) == 0)
+        return 0;
+    
     loop = uv_default_loop();
     if (server_start())
         return 1;

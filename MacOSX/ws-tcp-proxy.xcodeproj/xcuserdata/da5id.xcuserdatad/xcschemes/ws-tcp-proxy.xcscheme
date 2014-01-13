@@ -57,6 +57,12 @@
             ReferencedContainer = "container:ws-tcp-proxy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "--local 0.0.0.0:8080 --remote 192.168.0.144:1883"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

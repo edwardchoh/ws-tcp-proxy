@@ -28,6 +28,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5F24D4041883D483009084AC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5F77271C1883C4210077CB5D /* ws-tcp-proxy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ws-tcp-proxy"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F7727281883C44F0077CB5D /* http.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = http.c; path = ../http.c; sourceTree = "<group>"; };
 		5F7727291883C44F0077CB5D /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sha1.c; path = ../sha1.c; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		5F7727131883C4210077CB5D = {
 			isa = PBXGroup;
 			children = (
+				5F24D4041883D483009084AC /* README.md */,
 				5F7727361883C4BB0077CB5D /* libuv.dylib */,
 				5F7727331883C4620077CB5D /* http_parser.c */,
 				5F7727341883C4620077CB5D /* http_parser.h */,

@@ -17,7 +17,7 @@ Running
 
 The server accepts the following arguments:
 
-    ./ws-tcp-proxy --lhost 0.0.0.0:80 --rhost 127.0.0.1:5000
+    ./ws-tcp-proxy --local 0.0.0.0:8080 --remote 127.0.0.1:5000
 
 Features
 -----
