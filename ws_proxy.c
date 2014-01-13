@@ -286,10 +286,10 @@ int main(int argc, char **argv) {
     loop = uv_default_loop();
     if (server_start())
         return 1;
-#ifdef UV_RUN_DEFAULT
-    uv_run(loop, UV_RUN_DEFAULT);
-#else
+#if UV_VERSION_MINOR <= 6
     uv_run(loop);
+#else
+    uv_run(loop, UV_RUN_DEFAULT);
 #endif
     return 0;
 }
