@@ -1,0 +1,267 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F77272F1883C44F0077CB5D /* http.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F7727281883C44F0077CB5D /* http.c */; };
+		5F7727301883C44F0077CB5D /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F7727291883C44F0077CB5D /* sha1.c */; };
+		5F7727311883C44F0077CB5D /* ws_proxy.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F77272B1883C44F0077CB5D /* ws_proxy.c */; };
+		5F7727321883C44F0077CB5D /* wsparser.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F77272D1883C44F0077CB5D /* wsparser.c */; };
+		5F7727351883C4620077CB5D /* http_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F7727331883C4620077CB5D /* http_parser.c */; };
+		5F7727371883C4BB0077CB5D /* libuv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7727361883C4BB0077CB5D /* libuv.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F77271A1883C4210077CB5D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5F77271C1883C4210077CB5D /* ws-tcp-proxy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ws-tcp-proxy"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F7727281883C44F0077CB5D /* http.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = http.c; path = ../http.c; sourceTree = "<group>"; };
+		5F7727291883C44F0077CB5D /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sha1.c; path = ../sha1.c; sourceTree = "<group>"; };
+		5F77272A1883C44F0077CB5D /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = ../sha1.h; sourceTree = "<group>"; };
+		5F77272B1883C44F0077CB5D /* ws_proxy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ws_proxy.c; path = ../ws_proxy.c; sourceTree = "<group>"; };
+		5F77272C1883C44F0077CB5D /* ws_proxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ws_proxy.h; path = ../ws_proxy.h; sourceTree = "<group>"; };
+		5F77272D1883C44F0077CB5D /* wsparser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wsparser.c; path = ../wsparser.c; sourceTree = "<group>"; };
+		5F77272E1883C44F0077CB5D /* wsparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wsparser.h; path = ../wsparser.h; sourceTree = "<group>"; };
+		5F7727331883C4620077CB5D /* http_parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = http_parser.c; path = "../http-parser/http_parser.c"; sourceTree = "<group>"; };
+		5F7727341883C4620077CB5D /* http_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = http_parser.h; path = "../http-parser/http_parser.h"; sourceTree = "<group>"; };
+		5F7727361883C4BB0077CB5D /* libuv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libuv.dylib; path = ../../../../../usr/local/Cellar/libuv/0.10.21/lib/libuv.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F7727191883C4210077CB5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F7727371883C4BB0077CB5D /* libuv.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F7727131883C4210077CB5D = {
+			isa = PBXGroup;
+			children = (
+				5F7727361883C4BB0077CB5D /* libuv.dylib */,
+				5F7727331883C4620077CB5D /* http_parser.c */,
+				5F7727341883C4620077CB5D /* http_parser.h */,
+				5F7727281883C44F0077CB5D /* http.c */,
+				5F7727291883C44F0077CB5D /* sha1.c */,
+				5F77272A1883C44F0077CB5D /* sha1.h */,
+				5F77272B1883C44F0077CB5D /* ws_proxy.c */,
+				5F77272C1883C44F0077CB5D /* ws_proxy.h */,
+				5F77272D1883C44F0077CB5D /* wsparser.c */,
+				5F77272E1883C44F0077CB5D /* wsparser.h */,
+				5F77271D1883C4210077CB5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F77271D1883C4210077CB5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F77271C1883C4210077CB5D /* ws-tcp-proxy */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F77271B1883C4210077CB5D /* ws-tcp-proxy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F7727251883C4210077CB5D /* Build configuration list for PBXNativeTarget "ws-tcp-proxy" */;
+			buildPhases = (
+				5F7727181883C4210077CB5D /* Sources */,
+				5F7727191883C4210077CB5D /* Frameworks */,
+				5F77271A1883C4210077CB5D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ws-tcp-proxy";
+			productName = "ws-tcp-proxy";
+			productReference = 5F77271C1883C4210077CB5D /* ws-tcp-proxy */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F7727141883C4210077CB5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Edward Choh";
+			};
+			buildConfigurationList = 5F7727171883C4210077CB5D /* Build configuration list for PBXProject "ws-tcp-proxy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5F7727131883C4210077CB5D;
+			productRefGroup = 5F77271D1883C4210077CB5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F77271B1883C4210077CB5D /* ws-tcp-proxy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F7727181883C4210077CB5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F7727301883C44F0077CB5D /* sha1.c in Sources */,
+				5F7727351883C4620077CB5D /* http_parser.c in Sources */,
+				5F7727311883C44F0077CB5D /* ws_proxy.c in Sources */,
+				5F7727321883C44F0077CB5D /* wsparser.c in Sources */,
+				5F77272F1883C44F0077CB5D /* http.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5F7727231883C4210077CB5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5F7727241883C4210077CB5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5F7727261883C4210077CB5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/libuv/0.10.21/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5F7727271883C4210077CB5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/libuv/0.10.21/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F7727171883C4210077CB5D /* Build configuration list for PBXProject "ws-tcp-proxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F7727231883C4210077CB5D /* Debug */,
+				5F7727241883C4210077CB5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F7727251883C4210077CB5D /* Build configuration list for PBXNativeTarget "ws-tcp-proxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F7727261883C4210077CB5D /* Debug */,
+				5F7727271883C4210077CB5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F7727141883C4210077CB5D /* Project object */;
+}
